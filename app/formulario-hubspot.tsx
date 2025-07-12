@@ -5,7 +5,7 @@ import HubspotForm from '../formulario'
 import { Card } from "@/components/ui/card"
 
 export default function RegistrationForm() {
-  const [acceptTerms, setAcceptTerms] = useState(false)
+    const [acceptTerms, setAcceptTerms] = useState(false)
 
   const handleTermsChange = (checked: boolean | "indeterminate") => {
     setAcceptTerms(checked === true)
