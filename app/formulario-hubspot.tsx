@@ -5,19 +5,19 @@ import HubspotForm from "../formulario";
 import { Card } from "@/components/ui/card";
 
 export default function RegistrationForm() {
-  // Estado para saber si el usuario aceptó los términos
-  const [acceptTerms, setAcceptTerms] = useState(false)
+  const [acceptTerms, setAcceptTerms] = useState(false);
 
-  // Actualiza el estado cuando el checkbox cambia
   const handleTermsChange = (checked: boolean | "indeterminate") => {
-    setAcceptTerms(checked === true)
+    setAcceptTerms(checked === true);
   };
 
   return (
     <div className="flex justify-center lg:justify-start">
       <Card className="w-full bg-white border-none shadow-2xl">
-        {/* Tu formulario HubSpot */}
-        <HubspotForm />
+        {/* Tu formulario HubSpot con desactivación */}
+        <div className={acceptTerms ? "opacity-100" : "opacity-50 pointer-events-none"}>
+          <HubspotForm />
+        </div>
 
         {/* Checkbox de términos y condiciones */}
         <div className="mt-4 flex items-center gap-2 px-4 pb-4">
@@ -36,6 +36,7 @@ export default function RegistrationForm() {
             <a
               href="/terminos-y-condiciones"
               className="text-blue-600 underline hover:text-blue-800"
+              target="_blank"
             >
               términos y condiciones
             </a>
