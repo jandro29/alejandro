@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import HubspotForm from '../formulario'
 import { Card } from "@/components/ui/card"
 
