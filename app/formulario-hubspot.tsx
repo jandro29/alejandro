@@ -6,11 +6,11 @@ import { Card } from "@/components/ui/card";
 
 export default function RegistrationForm() {
   // Estado para saber si el usuario aceptó los términos
-  const [acceptTerms, setAcceptTerms] = useState(false);
+  const [acceptTerms, setAcceptTerms] = useState(false)
 
   // Actualiza el estado cuando el checkbox cambia
   const handleTermsChange = (checked: boolean | "indeterminate") => {
-    setAcceptTerms(checked === true);
+    setAcceptTerms(checked === true)
   };
 
   return (
