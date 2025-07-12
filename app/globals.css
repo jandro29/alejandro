@@ -126,10 +126,3 @@
 }
 }
 
-.nombre-color{
-
-  background: linear-gradient(to bottom, white 60%, #171717 40%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-

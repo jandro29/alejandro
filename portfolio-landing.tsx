@@ -73,7 +73,7 @@ export default function Component() {
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                   Hola, soy{" "}
-                  <span className="nombre-color text-primary ">Alejandro</span>
+                  <span className="text-primary text-white">Alejandro</span>
                 </h1>
                 <p className="max-w-[600px] text-gray-300 md:text-xl">
                   Desarrollador Full Stack con experiencia sólida en Frontend,
