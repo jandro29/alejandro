@@ -7,14 +7,10 @@ import { Card } from "@/components/ui/card";
 export default function RegistrationForm() {
   const [acceptTerms, setAcceptTerms] = useState(false);
 
-  const handleTermsChange = (checked: boolean | "indeterminate") => {
-    setAcceptTerms(checked === true);
-  };
-
   return (
     <div className="flex justify-center lg:justify-start">
       <Card className="w-full bg-white border-none shadow-2xl">
-        {/* Tu formulario HubSpot con desactivación */}
+        {/* Contenedor que bloquea el formulario si no se aceptan los términos */}
         <div className={acceptTerms ? "opacity-100" : "opacity-50 pointer-events-none"}>
           <HubspotForm />
         </div>
@@ -25,7 +21,7 @@ export default function RegistrationForm() {
             id="terms"
             type="checkbox"
             checked={acceptTerms}
-            onChange={(e) => handleTermsChange(e.target.checked)}
+            onChange={(e) => setAcceptTerms(e.target.checked)}
             className="h-4 w-4 cursor-pointer accent-blue-600"
           />
           <label
