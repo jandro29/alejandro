@@ -42,10 +42,12 @@ export default function Component() {
           </div>
 
           <div className="ml-auto flex items-center space-x-2 text-black">
+            <a href="/Alejandro-Colan-Rosenthal-CV.pdf" download>
             <Button variant="outline" size="sm">
               <Download className="mr-2 h-4 w-4 text-black" />
               CV
             </Button>
+            </a>
           </div>
         </div>
       </header>
