@@ -43,10 +43,10 @@ export default function Component() {
 
           <div className="ml-auto flex items-center space-x-2 text-black">
             <a href="/Alejandro-Colan-Rosenthal-CV.pdf" download>
-            <Button variant="outline" size="sm">
-              <Download className="mr-2 h-4 w-4 text-black" />
-              CV
-            </Button>
+              <Button variant="outline" size="sm">
+                <Download className="mr-2 h-4 w-4 text-black" />
+                CV
+              </Button>
             </a>
           </div>
         </div>
@@ -86,13 +86,22 @@ export default function Component() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <a href="https://github.com/jandro29" target="_blank">
-                <Button size="lg" className="cursor-pointer">Ver Proyectos</Button>
+                  <Button size="lg" className="cursor-pointer">
+                    Ver Proyectos
+                  </Button>
                 </a>
-                <a href="https://mail.google.com/mail/?view=cm&to=ascolanr@gmail.com" target="_blank">
-                <Button variant="outline" size="lg" className="text-black cursor-pointer">
-                  <Mail className="mr-2 h-4 w-4 text-black" />
-                  Contactar
-                </Button>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&to=ascolanr@gmail.com"
+                  target="_blank"
+                >
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="text-black cursor-pointer"
+                  >
+                    <Mail className="mr-2 h-4 w-4 text-black" />
+                    Contactar
+                  </Button>
                 </a>
               </div>
             </div>
@@ -123,10 +132,10 @@ export default function Component() {
               Sobre mí
             </h2>
             <p className="mt-4 text-gray-300 md:text-lg">
-              Soy un desarrollador con 3 años de experiencia creando
-              aplicaciones web. Me apasiona resolver problemas complejos y crear
-              soluciones elegantes que impacten positivamente en la vida de las
-              personas.
+              Soy desarrollador web con 3 años de experiencia creando
+              aplicaciones. Me apasiona resolver problemas complejos y
+              desarrollar soluciones eficientes que generen un impacto positivo
+              en la vida de las personas.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-2">
               <Card className="bg-gray-800/50 border-gray-700">
@@ -523,7 +532,7 @@ export default function Component() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                 <RegistrationForm />
+                  <RegistrationForm />
                 </CardContent>
               </Card>
             </div>
@@ -541,10 +550,16 @@ export default function Component() {
             </p>
           </div>
           <div className="flex items-center space-x-4 mr-4">
-            <Link href="https://github.com/jandro29" className="text-gray-300 hover:text-foreground cursor-pointer hover:text-white">
+            <Link
+              href="https://github.com/jandro29"
+              className="text-gray-300 hover:text-foreground cursor-pointer hover:text-white"
+            >
               <Github className="h-5 w-5" />
             </Link>
-            <Link href="https://mail.google.com/mail/?view=cm&to=ascolanr@gmail.com" className="text-gray-300 hover:text-foreground cursor-pointer hover:text-white">
+            <Link
+              href="https://mail.google.com/mail/?view=cm&to=ascolanr@gmail.com"
+              className="text-gray-300 hover:text-foreground cursor-pointer hover:text-white"
+            >
               <Mail className="h-5 w-5" />
             </Link>
           </div>
